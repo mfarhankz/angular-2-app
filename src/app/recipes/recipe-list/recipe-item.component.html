@@ -1,8 +1,8 @@
-<div class="thumbnail">
-  <img src="{{recipe.imagePath}}" alt="...">
+<div class="thumbnail" routerLinkActive="active">
+  <img src="{{recipe.imagePath}}" alt="image">
   <div class="caption">
     <h3>{{recipe.name}}</h3>
     <p>{{recipe.description}}</p>
-    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+    <p><a [routerLink]="[recipeId]" class="btn btn-primary">Detail</a></p>
   </div>
 </div>
