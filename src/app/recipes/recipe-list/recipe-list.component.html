@@ -1,6 +1,6 @@
-<a class="btn btn-success">New Recipe</a>
+<a class="btn btn-success" [routerLink]="['new']">New Recipe</a>
 <hr>
 <div class="row">
-    <div class="col-sm-6 col-md-6" app-recipe-item *ngFor="let recipe of recipes" [recipe]="recipe" (click)="onSelected(recipe)"></div>
+    <div class="col-sm-6 col-md-6" app-recipe-item *ngFor="let recipe of recipes; let i = index" [recipe]="recipe" [recipeId]="i"></div>
 </div>
 
