@@ -37,6 +37,7 @@ export class RecipeDetailComponent implements OnInit, OnDestroy {
     this.router.navigate(['/recipes']);
   }
 
+
   onAddToShoppingList() {
     this.sls.addItems(this.selectedRecipe.ingredients);
   }
