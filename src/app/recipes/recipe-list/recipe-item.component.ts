@@ -11,3 +11,4 @@ export class RecipeItemComponent {
   @Input() recipe: Recipe;
   @Input() recipeId: number;
 }
+
