@@ -6,6 +6,7 @@ import {RecipeService} from "../recipe.service";
   selector: '[app-recipe-list]',
   templateUrl: './recipe-list.component.html'
 })
+
 export class RecipeListComponent implements OnInit {
   recipes: Recipe[] = [];
   constructor(private recipeService: RecipeService) {}
