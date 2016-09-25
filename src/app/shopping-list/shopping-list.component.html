@@ -1,9 +1,9 @@
 <br>
 <hr>
-<div app-shopping-list-add></div>
+<div app-shopping-list-add [item]="selectedItem" (cleared)="onCleared()"></div>
 <hr>
 <ul class="list-group">
-  <a class="list-group-item" style="cursor: pointer" *ngFor="let item of items">{{item.name}} ({{item.amount}})</a>
+  <a class="list-group-item" style="cursor: pointer" *ngFor="let item of items" (click)="onSelectItem(item)">{{item.name}} ({{item.amount}})</a>
 </ul>
 
 <br>
