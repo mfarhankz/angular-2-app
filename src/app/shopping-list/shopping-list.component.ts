@@ -23,5 +23,4 @@ export class ShoppingListComponent implements OnInit {
     this.selectedItem = null;
   }
 
-
 }
