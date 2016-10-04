@@ -44,4 +44,5 @@ import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component
   providers: [RecipeService, ShoppingListService],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
