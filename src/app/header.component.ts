@@ -21,5 +21,8 @@ export class HeaderComponent {
   onFetch() {
     this.recipeService.fetchData();
   }
+  onShow(){
+    this.recipeService.showData();
+  }
 
 }
