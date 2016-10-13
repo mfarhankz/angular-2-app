@@ -8,7 +8,6 @@ import { RecipeService } from "./recipes/recipe.service";
   templateUrl: './header.component.html'
 })
 export class HeaderComponent {
-
   constructor(private recipeService: RecipeService) { }
 
   onStore() {
