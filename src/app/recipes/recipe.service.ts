@@ -50,6 +50,7 @@ export class RecipeService {
     return this.http.put('https://recipebook-a50e8.firebaseio.com/recipes.json', body, {headers: headers});
   }
 
+
   fetchData() {
     return this.http.get('https://recipebook-a50e8.firebaseio.com/recipes.json')
         .map((response: Response) => response.json())
