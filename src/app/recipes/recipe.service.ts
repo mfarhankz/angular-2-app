@@ -66,7 +66,7 @@ export class RecipeService {
     return this.http.get('http://dev.readata.net/API/User/List/')
         .map((response: Response) => response.json())
         .subscribe(
-            (data: Response) => console.log(data)
+            (data: Response) => console.log(data[0].User)
    );
   }
 }
